@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        tools:context=".MainActivity"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:contentDescription="@string/app_logo"
+            android:layout_width="match_parent"
+            android:layout_height="173dp"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:src="@drawable/logo" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/table">
+
+
+            <TableRow android:layout_width="278dp">
+
+                <Button
+                    android:id="@+id/topButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:padding="10dp"
+                    android:text="@string/copy_text_from_clipboard"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/findButton"
+                    android:text="@string/find_phrase"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/resetButton"
+                    android:text="@string/reset"
+                    android:textSize="18sp"
+                    android:padding="10dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table"
+            android:id="@+id/numberOfFound"
+            android:text="@string/xxx" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/numberOfFound"
+            android:id="@+id/textView"
+            android:text="@string/paste_text_from_clipboard"
+            android:padding="10dp"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+</ScrollView>
